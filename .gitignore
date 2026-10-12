@@ -1,0 +1,6 @@
+/build*/
+/dist/
+/install*/
+*.log
+__pycache__/
+.DS_Store

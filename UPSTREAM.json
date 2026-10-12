@@ -1,0 +1,991 @@
+{
+  "repository": "https://github.com/alibaba/zvec",
+  "commit": "13fd088b6255363c0d1362724340243bc8f6d0d2",
+  "files": [
+    {
+      "source": "src/turbo/distance/avx2/fp16/cosine.cc",
+      "destination": "src/distance/avx2/fp16/cosine.cc",
+      "sha256": "5eab28b58fe432e3cebabe5eb3d7e7b83dcea35724f18e3fcab1e62acd1f6357"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp16/cosine.h",
+      "destination": "src/distance/avx2/fp16/cosine.h",
+      "sha256": "a6699b5b7d8d87aa5f38029f355b80adf8c596addc5bb4207a69c4b2a60e4758"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp16/inner_product.cc",
+      "destination": "src/distance/avx2/fp16/inner_product.cc",
+      "sha256": "543e09f2e841e1ab9b813cb75abfa7f9f716b652ace0ee1cb2bfe55ab7fc39b6"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp16/inner_product.h",
+      "destination": "src/distance/avx2/fp16/inner_product.h",
+      "sha256": "acf1cfdfaca884576b4ad6a7519e5eab6565d9915af9e7a5423a2d9a194f8491"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp16/inner_product_common.h",
+      "destination": "src/distance/avx2/fp16/inner_product_common.h",
+      "sha256": "35f92a225fb4758c9e7c0a01bb21ae8b72516f05f6921e701dd1237a32f052d4"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp16/squared_euclidean.cc",
+      "destination": "src/distance/avx2/fp16/squared_euclidean.cc",
+      "sha256": "0fecd14488d3f95085b5e832d003b156c575a967f678c1c6a505653bd20dfbea"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp16/squared_euclidean.h",
+      "destination": "src/distance/avx2/fp16/squared_euclidean.h",
+      "sha256": "d12323aa13e0025d3f7b0808e033721d3d29c1f2733b8c07ca4c11994bed81f5"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp32/cosine.cc",
+      "destination": "src/distance/avx2/fp32/cosine.cc",
+      "sha256": "c4b081fede9e367594f5f3a44e868f6a6277864231b90703c8f58d7b7f99296a"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp32/cosine.h",
+      "destination": "src/distance/avx2/fp32/cosine.h",
+      "sha256": "ca6b74dd24037b9f2bff29d3c7836a96e908a824be5196a5a49b0e9cdc1ba3d5"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp32/inner_product.cc",
+      "destination": "src/distance/avx2/fp32/inner_product.cc",
+      "sha256": "8504e20024a7ebbce8ffadf753800242a1043d493c54dfd2d49fbf58b7d4d36b"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp32/inner_product.h",
+      "destination": "src/distance/avx2/fp32/inner_product.h",
+      "sha256": "1a50d55c47bcd42c2fa6481096c6e30d692a16c70d9a7fb3bc4a9b3c159983ae"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp32/squared_euclidean.cc",
+      "destination": "src/distance/avx2/fp32/squared_euclidean.cc",
+      "sha256": "6b4f0a3dc1630f7a8173f8fd5ade90a445877a2e0928c1d8bfeda4c28968df3b"
+    },
+    {
+      "source": "src/turbo/distance/avx2/fp32/squared_euclidean.h",
+      "destination": "src/distance/avx2/fp32/squared_euclidean.h",
+      "sha256": "44521ccfdf6a2d180a87eac4898124a0953cf41efe10a02bd21c19c0a7e338ce"
+    },
+    {
+      "source": "src/turbo/distance/avx2/pq_quantizer_fast/pq_distance.cc",
+      "destination": "src/distance/avx2/pq_quantizer_fast/pq_distance.cc",
+      "sha256": "196fe8495d8facb062ecc72a1e8bb55b2c2bc7fa319917a3304b5690c7175075"
+    },
+    {
+      "source": "src/turbo/distance/avx2/pq_quantizer_fast/pq_distance.h",
+      "destination": "src/distance/avx2/pq_quantizer_fast/pq_distance.h",
+      "sha256": "06ed37b42d580c7b288046bee16c77228f311959f16c40f135f4aa0de997c61a"
+    },
+    {
+      "source": "src/turbo/distance/avx2/pq_quantizer_int4/pq_distance.cc",
+      "destination": "src/distance/avx2/pq_quantizer_int4/pq_distance.cc",
+      "sha256": "6af4cb9ff5c65177d4f704584ed05ab5dc9e7ceaae98d285db6b92bb61c3da2a"
+    },
+    {
+      "source": "src/turbo/distance/avx2/pq_quantizer_int4/pq_distance.h",
+      "destination": "src/distance/avx2/pq_quantizer_int4/pq_distance.h",
+      "sha256": "42207237ed0a7a14294aa7afb0b1b9f3b25ad71ded9a526d371d52cfce2654bc"
+    },
+    {
+      "source": "src/turbo/distance/avx2/pq_quantizer_int8/pq_distance.cc",
+      "destination": "src/distance/avx2/pq_quantizer_int8/pq_distance.cc",
+      "sha256": "712910b5e59f756d1ecf92b1dd44fb93a4a1f94b4d435467e8f53a38371f6e6c"
+    },
+    {
+      "source": "src/turbo/distance/avx2/pq_quantizer_int8/pq_distance.h",
+      "destination": "src/distance/avx2/pq_quantizer_int8/pq_distance.h",
+      "sha256": "00faaf8ebb95f6e2d8116c048a4240bdac964bdeb840cb1f41986079839c2d4e"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/common.h",
+      "destination": "src/distance/avx2/record_quantized_int4/common.h",
+      "sha256": "53b48a53c12bed6e9f1bf7e7f9fd922304fc0df9be93818d65e81f4504d57d53"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/cosine.cc",
+      "destination": "src/distance/avx2/record_quantized_int4/cosine.cc",
+      "sha256": "19fd97013733067b501a18aa7c023fcfa2d81b4d4e9f1a66cd176550a28b159d"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/cosine.h",
+      "destination": "src/distance/avx2/record_quantized_int4/cosine.h",
+      "sha256": "de5fc10750c2ba11d77ad2a804f1c32a5ef199d4cc83adc0853bf70221ad47b8"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/inner_product.cc",
+      "destination": "src/distance/avx2/record_quantized_int4/inner_product.cc",
+      "sha256": "ffbc9a265c68d99db9663cb6e5deebbef6d59e252ed68276e0ba7bf9ad246917"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/inner_product.h",
+      "destination": "src/distance/avx2/record_quantized_int4/inner_product.h",
+      "sha256": "fc6ffe4cb37ff95d56c6cabde797ff30bda7d1b897b1014a32a8648a7a4ff9d3"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/squared_euclidean.cc",
+      "destination": "src/distance/avx2/record_quantized_int4/squared_euclidean.cc",
+      "sha256": "925db3302c94af3e2e2900da7df0f0df55e0a538b8242ddf594344bceab6ad21"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int4/squared_euclidean.h",
+      "destination": "src/distance/avx2/record_quantized_int4/squared_euclidean.h",
+      "sha256": "77ca2189a077d19aaac5ecbb598f266d68c55892525b89bcd4bcef3f87aa77ed"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/common.h",
+      "destination": "src/distance/avx2/record_quantized_int8/common.h",
+      "sha256": "2922c97a6ebc010dcdd433e4c668c034f7bf21b8a84c3db0086622e921904cc9"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/cosine.cc",
+      "destination": "src/distance/avx2/record_quantized_int8/cosine.cc",
+      "sha256": "487a7d9c1becb6fa98e5b5d9a22ac5478a51ebadd57fdd6b0f559365aea84956"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/cosine.h",
+      "destination": "src/distance/avx2/record_quantized_int8/cosine.h",
+      "sha256": "11b1b478d4b963fa4ee22cc95d35176a593eafe1b4ba14c0bce664b27e782c7c"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/inner_product.cc",
+      "destination": "src/distance/avx2/record_quantized_int8/inner_product.cc",
+      "sha256": "3ac46aab7b322b67e092c2244d2c2cf2de98f6b24026d04c832ed9851be0dbb1"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/inner_product.h",
+      "destination": "src/distance/avx2/record_quantized_int8/inner_product.h",
+      "sha256": "5d6c5afe321745b07d430a6952678d3a3c0e0a344e088c02e8e335c877d4db64"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/squared_euclidean.cc",
+      "destination": "src/distance/avx2/record_quantized_int8/squared_euclidean.cc",
+      "sha256": "57b9aa52d0f1b87f0e4abbf283e586969a367ec50732b28d2ed964a35f05ed2c"
+    },
+    {
+      "source": "src/turbo/distance/avx2/record_quantized_int8/squared_euclidean.h",
+      "destination": "src/distance/avx2/record_quantized_int8/squared_euclidean.h",
+      "sha256": "89bf8194cffc2c41a5651bae052262add883e4a83036eda4f6461a86ecf710bc"
+    },
+    {
+      "source": "src/turbo/distance/avx2/rotate/fht/fht.cc",
+      "destination": "src/distance/avx2/rotate/fht/fht.cc",
+      "sha256": "b074d251cf5bfce4f184271523c8f050bdf7325b61eef0395ba6654ea3c8d632"
+    },
+    {
+      "source": "src/turbo/distance/avx2/rotate/fht/fht.h",
+      "destination": "src/distance/avx2/rotate/fht/fht.h",
+      "sha256": "88d283a539eb474ac5e02363013f0cf5eeb16e13774f447aab22df94b1f5b0d2"
+    },
+    {
+      "source": "src/turbo/distance/avx2/rotate/opq/opq.cc",
+      "destination": "src/distance/avx2/rotate/opq/opq.cc",
+      "sha256": "ef6608a1897e955115bec340441da213bf625ffe3188faa7ae316aae6655a610"
+    },
+    {
+      "source": "src/turbo/distance/avx2/rotate/opq/opq.h",
+      "destination": "src/distance/avx2/rotate/opq/opq.h",
+      "sha256": "6accc263b9392841dd07221d1273e6147d13af5b313b597d2ecf5436339518b7"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp16/cosine.cc",
+      "destination": "src/distance/avx512/fp16/cosine.cc",
+      "sha256": "60e10dcaa807282ebd1d89acfbd1196d8d2c2eaa54e9824fa5f55238c44849e5"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp16/cosine.h",
+      "destination": "src/distance/avx512/fp16/cosine.h",
+      "sha256": "0ef610c17188116fe0e2d27a41a8eaf72496ea0a9bd261be924bc5497cbcae77"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp16/inner_product.cc",
+      "destination": "src/distance/avx512/fp16/inner_product.cc",
+      "sha256": "bcc95ec1f8037a5d5f9730b686289b9ec77ceb1598150ae838d5598964c9af6f"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp16/inner_product.h",
+      "destination": "src/distance/avx512/fp16/inner_product.h",
+      "sha256": "81ae072fdccffe13851f5eae75ff0245cd02d4d9e3dcd97a2eef111386366efa"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp16/squared_euclidean.cc",
+      "destination": "src/distance/avx512/fp16/squared_euclidean.cc",
+      "sha256": "64407c1034ed263e5c6a0712fb9db579f7e03f210a635e68049ffcd8a76a0603"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp16/squared_euclidean.h",
+      "destination": "src/distance/avx512/fp16/squared_euclidean.h",
+      "sha256": "a5c63422745446fa5fc1dd70069e6d66c51ab0acc91bad13b379e1d9cd420549"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp32/cosine.cc",
+      "destination": "src/distance/avx512/fp32/cosine.cc",
+      "sha256": "7114a3abe2d9027c90aec38dbdebc7148051a7eaa4befecdce9b41a4bf74e464"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp32/cosine.h",
+      "destination": "src/distance/avx512/fp32/cosine.h",
+      "sha256": "af55f95caf8c51409a804ab29b2d12580ed83595b4312da3fd7282a2f7a1cdb2"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp32/inner_product.cc",
+      "destination": "src/distance/avx512/fp32/inner_product.cc",
+      "sha256": "4ebd47364df611228d5cac19fe6fcbbdbe4aac3e53cd5f38caec98252b7c86fc"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp32/inner_product.h",
+      "destination": "src/distance/avx512/fp32/inner_product.h",
+      "sha256": "d6ee99289e6b8ea98c2a945f0510698fa337d70f4b0a6a59dfd1017c0407ad8e"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp32/squared_euclidean.cc",
+      "destination": "src/distance/avx512/fp32/squared_euclidean.cc",
+      "sha256": "9074ba9727ded7cb9717bf01d0e269dafe1683b8ecc821bd213851f5117738b7"
+    },
+    {
+      "source": "src/turbo/distance/avx512/fp32/squared_euclidean.h",
+      "destination": "src/distance/avx512/fp32/squared_euclidean.h",
+      "sha256": "b6fb583cbbefec69b09c5abd5598fc426151eca30c7232dc826f0c9188a42b18"
+    },
+    {
+      "source": "src/turbo/distance/avx512/pq_quantizer_fast/pq_distance.cc",
+      "destination": "src/distance/avx512/pq_quantizer_fast/pq_distance.cc",
+      "sha256": "9abafd927741468d7b7522b36e231c1af8369b60cedb1bae4d46225e033ba840"
+    },
+    {
+      "source": "src/turbo/distance/avx512/pq_quantizer_fast/pq_distance.h",
+      "destination": "src/distance/avx512/pq_quantizer_fast/pq_distance.h",
+      "sha256": "9d9360758b5fa34b7c9162a678e8a2822b2099e7e51f016c88e30fc63ae65d24"
+    },
+    {
+      "source": "src/turbo/distance/avx512/pq_quantizer_int4/pq_distance.cc",
+      "destination": "src/distance/avx512/pq_quantizer_int4/pq_distance.cc",
+      "sha256": "d5b2256c394cd6ad3678153d1aa850e500c9651d6ab6d3e87b904ca6ceec2b07"
+    },
+    {
+      "source": "src/turbo/distance/avx512/pq_quantizer_int4/pq_distance.h",
+      "destination": "src/distance/avx512/pq_quantizer_int4/pq_distance.h",
+      "sha256": "4f5c2ae40b47087932a0633f938714bc6aaaa4e8fe867d3ef0f29408baf37f9b"
+    },
+    {
+      "source": "src/turbo/distance/avx512/pq_quantizer_int8/pq_distance.cc",
+      "destination": "src/distance/avx512/pq_quantizer_int8/pq_distance.cc",
+      "sha256": "eb62c2410585ccf42cbc22959e006c12ceb1c48113e36bd96f2a8363f0135762"
+    },
+    {
+      "source": "src/turbo/distance/avx512/pq_quantizer_int8/pq_distance.h",
+      "destination": "src/distance/avx512/pq_quantizer_int8/pq_distance.h",
+      "sha256": "cb7e77ffbc214f14d3b38d127b1307f950048748119b93249cd626f324ba9774"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/common.h",
+      "destination": "src/distance/avx512/record_quantized_int4/common.h",
+      "sha256": "497785dde44c4332ddf850483d9847b03467ee2365115bfe0f020300dd9ba1f0"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/cosine.cc",
+      "destination": "src/distance/avx512/record_quantized_int4/cosine.cc",
+      "sha256": "399b15633dbce4b3aa2cc89174b07ea3aec238cb96d0a84a87bb480f23d9eba3"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/cosine.h",
+      "destination": "src/distance/avx512/record_quantized_int4/cosine.h",
+      "sha256": "ac74760e451d2a69a7ecd396be47a219919b87e1de222fdd7eb02d69f2737990"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/inner_product.cc",
+      "destination": "src/distance/avx512/record_quantized_int4/inner_product.cc",
+      "sha256": "a5660c9e693f47574f4768a3872b848024491a932cbd8fb50b95f1f09d87e382"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/inner_product.h",
+      "destination": "src/distance/avx512/record_quantized_int4/inner_product.h",
+      "sha256": "1cfb338ef347dc1c09bc574977e0ed6efec4e88122200b1a3ab8be6f618db406"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/squared_euclidean.cc",
+      "destination": "src/distance/avx512/record_quantized_int4/squared_euclidean.cc",
+      "sha256": "ac7be3546553d71ac523f61fca867b5e8c66d274c8bab0734e27ae53547f4e24"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int4/squared_euclidean.h",
+      "destination": "src/distance/avx512/record_quantized_int4/squared_euclidean.h",
+      "sha256": "613608190ef57f94148ea2cd7ee6a4810b1c55e9da31d98f2f504e3dbf03ada6"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/common.h",
+      "destination": "src/distance/avx512/record_quantized_int8/common.h",
+      "sha256": "38906b8a653db5141032e39f531641c13dd31dc152be667a8d233134a09100bf"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/cosine.cc",
+      "destination": "src/distance/avx512/record_quantized_int8/cosine.cc",
+      "sha256": "dc9bae627b0468c3e643f083def0b96c141284ee0292db07418d324e2fde4461"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/cosine.h",
+      "destination": "src/distance/avx512/record_quantized_int8/cosine.h",
+      "sha256": "8031d341cdeb2fc10c0c1268599c7ed1a1ddeb2dded24ab9af3bcdc0e56f583d"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/inner_product.cc",
+      "destination": "src/distance/avx512/record_quantized_int8/inner_product.cc",
+      "sha256": "5dbca9d227af94b44dea5ade8a74fde59087f967a0ea961bdc2e7413a3e1cb13"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/inner_product.h",
+      "destination": "src/distance/avx512/record_quantized_int8/inner_product.h",
+      "sha256": "c7375d7e1568c19b9a74a0b42478467b7f8e2260fcec5eaf927cea7778a102fd"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/squared_euclidean.cc",
+      "destination": "src/distance/avx512/record_quantized_int8/squared_euclidean.cc",
+      "sha256": "8ae7d746c335909a51931ea573a65e4c4a823894b7eb9da6230dc7bafb72c1c0"
+    },
+    {
+      "source": "src/turbo/distance/avx512/record_quantized_int8/squared_euclidean.h",
+      "destination": "src/distance/avx512/record_quantized_int8/squared_euclidean.h",
+      "sha256": "bedbeb2a230c1e26d1000106c01464df1551b4c169c7983c6c068a32ae0b5838"
+    },
+    {
+      "source": "src/turbo/distance/avx512/rotate/fht/fht.cc",
+      "destination": "src/distance/avx512/rotate/fht/fht.cc",
+      "sha256": "f086f1cf91c573831fbf272fb397796f363182a15f8dc3d3ac6c91887b8e50dd"
+    },
+    {
+      "source": "src/turbo/distance/avx512/rotate/fht/fht.h",
+      "destination": "src/distance/avx512/rotate/fht/fht.h",
+      "sha256": "2ab47555121a982570a5b567111ca37da1bbccbb14fd1344be24d2a45d36a0e5"
+    },
+    {
+      "source": "src/turbo/distance/avx512/rotate/opq/opq.cc",
+      "destination": "src/distance/avx512/rotate/opq/opq.cc",
+      "sha256": "96690987a474c24cfe4c290a06f8ae228d09af4626f6e13d4d29685281b1d3ac"
+    },
+    {
+      "source": "src/turbo/distance/avx512/rotate/opq/opq.h",
+      "destination": "src/distance/avx512/rotate/opq/opq.h",
+      "sha256": "4de5ba316d78aad87e03d616761c3dfa4ff0b4db7e5ed94f65a397b3641f8d06"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/common.h",
+      "destination": "src/distance/avx512_fp16/fp16/common.h",
+      "sha256": "5b739db8085cc4a5e8c7a7802c2586494a72df0a823735762322a4176f62f6ef"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/cosine.cc",
+      "destination": "src/distance/avx512_fp16/fp16/cosine.cc",
+      "sha256": "fd0dacda4b1511aea87f9fa059acf05609cd7f757422893114685400d7d1dc4b"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/cosine.h",
+      "destination": "src/distance/avx512_fp16/fp16/cosine.h",
+      "sha256": "5a90b4a3d3663dee4a81affcd5741c9c227ec13d73ab947953b332ece40487fe"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/inner_product.cc",
+      "destination": "src/distance/avx512_fp16/fp16/inner_product.cc",
+      "sha256": "974af92d44319cd067327a00305fc8283735db55bd271e74f8483a739c0de117"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/inner_product.h",
+      "destination": "src/distance/avx512_fp16/fp16/inner_product.h",
+      "sha256": "85a800030892a6354e96df3e0a40282b3c7b12f9519b68dc751fd3303a87404d"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/squared_euclidean.cc",
+      "destination": "src/distance/avx512_fp16/fp16/squared_euclidean.cc",
+      "sha256": "bb739264acba5c8152e8a7c98944e3810a63ffe4ac5f0caaa8c332ff9906e077"
+    },
+    {
+      "source": "src/turbo/distance/avx512_fp16/fp16/squared_euclidean.h",
+      "destination": "src/distance/avx512_fp16/fp16/squared_euclidean.h",
+      "sha256": "b05271c48a35ae0eae6a2cb43b5db2f81c55d03d7a27c0184329cdba9b2a095e"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/fp16/squared_euclidean.cc",
+      "destination": "src/distance/avx512_vnni/fp16/squared_euclidean.cc",
+      "sha256": "2a1824ad7ec95ee84d3cc4babb13cdc1f66242fe261623af3c9c9042ac22bf2c"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/fp16/squared_euclidean.h",
+      "destination": "src/distance/avx512_vnni/fp16/squared_euclidean.h",
+      "sha256": "dad01a930198b8480cb7dc296e930d5d08cd22413925eeac92147e79ff962a87"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/raw_uint8/squared_euclidean.cc",
+      "destination": "src/distance/avx512_vnni/raw_uint8/squared_euclidean.cc",
+      "sha256": "18b119029b8c0d2b591ad55d58b267923d7e4d46c584846fc0f0041ba573d12d"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/raw_uint8/squared_euclidean.h",
+      "destination": "src/distance/avx512_vnni/raw_uint8/squared_euclidean.h",
+      "sha256": "fb0465631bb15dfaca890287426c6f9ebe9d43b2ca53fbfd966867a830a1d1ba"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/record_quantized_int8/common.h",
+      "destination": "src/distance/avx512_vnni/record_quantized_int8/common.h",
+      "sha256": "1352740b847e88b15f7793dace6f5433ea91d29ec728821d5b0afa5125a4fe86"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/record_quantized_int8/cosine.cc",
+      "destination": "src/distance/avx512_vnni/record_quantized_int8/cosine.cc",
+      "sha256": "2ca16c2c1c5bf9b90a96717abe0106d22f4804a9d4dab0da82c42f9014d0a98e"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/record_quantized_int8/cosine.h",
+      "destination": "src/distance/avx512_vnni/record_quantized_int8/cosine.h",
+      "sha256": "1486e6f3467f01e7c5cb5856cd86cb87b604e0e95ac72ab188cacbbe6ea09a0e"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/record_quantized_int8/squared_euclidean.cc",
+      "destination": "src/distance/avx512_vnni/record_quantized_int8/squared_euclidean.cc",
+      "sha256": "4dd38ccf1d5fe23ab52e0862be5962ae033be3d726fb4695b9fffcc26e686a47"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/record_quantized_int8/squared_euclidean.h",
+      "destination": "src/distance/avx512_vnni/record_quantized_int8/squared_euclidean.h",
+      "sha256": "fa71282226a9cd392f1313913ad1b4613ce9785a08479b5d27d8a22c3813d009"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint4/quantize.cc",
+      "destination": "src/distance/avx512_vnni/uniform_uint4/quantize.cc",
+      "sha256": "69d35c2632b265b725761f30ac3d29373efc98e64beaa57ea793384b700be150"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint4/quantize.h",
+      "destination": "src/distance/avx512_vnni/uniform_uint4/quantize.h",
+      "sha256": "1b861fb68783b2e3dee0cfe5ee82169168c8b8e500a60af3af44e6820245c137"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint4/squared_euclidean.cc",
+      "destination": "src/distance/avx512_vnni/uniform_uint4/squared_euclidean.cc",
+      "sha256": "a8608cc6a55be9bd4d5b4dac3d692db10f51541efb5522c8aa083a3cb66990b9"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint4/squared_euclidean.h",
+      "destination": "src/distance/avx512_vnni/uniform_uint4/squared_euclidean.h",
+      "sha256": "626bddd1f79b3a696d166791dbdb691f713f652ae2c35679d4267045560b2e1c"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint7/quantize.cc",
+      "destination": "src/distance/avx512_vnni/uniform_uint7/quantize.cc",
+      "sha256": "bb9b6d3ee163441ac5c9e87d77cac6c170d588b4d2e028f24b99f6f92b006252"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint7/quantize.h",
+      "destination": "src/distance/avx512_vnni/uniform_uint7/quantize.h",
+      "sha256": "df3ad1fc69c45117b163ca5897c9d462b9513d73757410091fe43f3200ce4c38"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint7/squared_euclidean.cc",
+      "destination": "src/distance/avx512_vnni/uniform_uint7/squared_euclidean.cc",
+      "sha256": "f86780a1dc7f5038a41e7ffe53499f7ec5bdea47a5d73b0e6a2fa6240519fbdf"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint7/squared_euclidean.h",
+      "destination": "src/distance/avx512_vnni/uniform_uint7/squared_euclidean.h",
+      "sha256": "30700588bb1ffbdfec7ba8da20e480d7f86170ee13550a573817d9f3dc66d05f"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint8/squared_euclidean.cc",
+      "destination": "src/distance/avx512_vnni/uniform_uint8/squared_euclidean.cc",
+      "sha256": "51b80ac3cdd2da5b5f94332914c88bbdebfcb0b0d8a8ff11f1ce4ddac1ed826c"
+    },
+    {
+      "source": "src/turbo/distance/avx512_vnni/uniform_uint8/squared_euclidean.h",
+      "destination": "src/distance/avx512_vnni/uniform_uint8/squared_euclidean.h",
+      "sha256": "f812ce2b5f9817eb6a9a899f59dd4a9ed1a1c7987eba45b0140f064ced1d5a9a"
+    },
+    {
+      "source": "src/turbo/distance/common/fast_scan_common.h",
+      "destination": "src/distance/common/fast_scan_common.h",
+      "sha256": "0ff924db95ce315c28c29ba6078a757a03dd786d1e81cb47a7f1fec9c07b5e04"
+    },
+    {
+      "source": "src/turbo/distance/common/fht_common.h",
+      "destination": "src/distance/common/fht_common.h",
+      "sha256": "19a2b49f89b582bc49f54580b88fbaf239cd1db5e70c385f03f059590bc3ae57"
+    },
+    {
+      "source": "src/turbo/distance/common/fp16_common.h",
+      "destination": "src/distance/common/fp16_common.h",
+      "sha256": "6a7cbc1a04cee250ec828ad265f1568977578d501952228c3c68d26e275723a6"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp16/cosine.cc",
+      "destination": "src/distance/neon/fp16/cosine.cc",
+      "sha256": "a6b1148e30b3b8b19fd492afdee848d97427295fb9453e366e2952138bfe79d9"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp16/cosine.h",
+      "destination": "src/distance/neon/fp16/cosine.h",
+      "sha256": "44d8ad0caacf5f25d54ccd6467bfd71a8a10c72898893f43f225c0ffdd615c05"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp16/inner_product.cc",
+      "destination": "src/distance/neon/fp16/inner_product.cc",
+      "sha256": "8af8d54e17a4be02868d66393f1f4cf30353d4fddb9f6d3244068e6014cf061d"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp16/inner_product.h",
+      "destination": "src/distance/neon/fp16/inner_product.h",
+      "sha256": "adde9f882f5759da80dec2604eb8370839fa66e1fab412a0b57565c9cf79e002"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp16/squared_euclidean.cc",
+      "destination": "src/distance/neon/fp16/squared_euclidean.cc",
+      "sha256": "794fb1c5ac9b2d159c2feedf70cac518744fdca7b9c86ea9eba6cd8cd6b60d1d"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp16/squared_euclidean.h",
+      "destination": "src/distance/neon/fp16/squared_euclidean.h",
+      "sha256": "34cc732a41a3f12277a4f6bfa1a41725bb4bf6bb49137734e21549c24611e2b6"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp32/cosine.cc",
+      "destination": "src/distance/neon/fp32/cosine.cc",
+      "sha256": "1b82975aa6e8467f5085a60bb89e4d0ddce5d356bc99e12edc7f9bda596f9a6f"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp32/cosine.h",
+      "destination": "src/distance/neon/fp32/cosine.h",
+      "sha256": "8109d1c930e2e1f0b13ca6a8551404e5459b5bcbcb35ff26326abdafd2f01d60"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp32/inner_product.cc",
+      "destination": "src/distance/neon/fp32/inner_product.cc",
+      "sha256": "05dbca3c6bdb1f637992bdb7d2beb46f676c99bb62af60b6475a10424638a1b2"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp32/inner_product.h",
+      "destination": "src/distance/neon/fp32/inner_product.h",
+      "sha256": "01d677c9d3f24e17f75b784a45fd801db6e3593d701efc33f305445f0a6eb9bb"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp32/squared_euclidean.cc",
+      "destination": "src/distance/neon/fp32/squared_euclidean.cc",
+      "sha256": "60630c4b350b532c37aad2a11c0aae0c02f6b6f3ab886c13998f7736a6f7bcdd"
+    },
+    {
+      "source": "src/turbo/distance/neon/fp32/squared_euclidean.h",
+      "destination": "src/distance/neon/fp32/squared_euclidean.h",
+      "sha256": "d638826188cea9de156fee287d949fdc0ad04caea291cfd9fc1f6fba06ee76ee"
+    },
+    {
+      "source": "src/turbo/distance/neon/pq_quantizer_fast/pq_distance.cc",
+      "destination": "src/distance/neon/pq_quantizer_fast/pq_distance.cc",
+      "sha256": "1bfba85f76bb9b94789a7537d6aa7a5990efdf26f9538c02464de784a8b5f101"
+    },
+    {
+      "source": "src/turbo/distance/neon/pq_quantizer_fast/pq_distance.h",
+      "destination": "src/distance/neon/pq_quantizer_fast/pq_distance.h",
+      "sha256": "46a5a6118976b677f52850981b8f7fa88fdd6e4b80ee2499d7b9b249ff81d8e8"
+    },
+    {
+      "source": "src/turbo/distance/neon/pq_quantizer_int4/pq_distance.cc",
+      "destination": "src/distance/neon/pq_quantizer_int4/pq_distance.cc",
+      "sha256": "7b329e21834a0ef10bb09294f5a5e078da61aa73d6b32d623f085b2572ad8910"
+    },
+    {
+      "source": "src/turbo/distance/neon/pq_quantizer_int4/pq_distance.h",
+      "destination": "src/distance/neon/pq_quantizer_int4/pq_distance.h",
+      "sha256": "e428702c848020aef5d792182e0445e6a2617104512e941b6720b105fddc629b"
+    },
+    {
+      "source": "src/turbo/distance/neon/pq_quantizer_int8/pq_distance.cc",
+      "destination": "src/distance/neon/pq_quantizer_int8/pq_distance.cc",
+      "sha256": "646da4a2d1ddd21638e383e3eecd071e6febb5f76ff3ed09b4a1fc7b262eb54e"
+    },
+    {
+      "source": "src/turbo/distance/neon/pq_quantizer_int8/pq_distance.h",
+      "destination": "src/distance/neon/pq_quantizer_int8/pq_distance.h",
+      "sha256": "618dac78e2b3d8c00511dbed9194b191a7a85f120a0a1a986a753743f29b4108"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/common.h",
+      "destination": "src/distance/neon/record_quantized_int4/common.h",
+      "sha256": "236aca385fb00d08cbff9391a271213047c0b6e1eab19f2063f2baba2443da9b"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/cosine.cc",
+      "destination": "src/distance/neon/record_quantized_int4/cosine.cc",
+      "sha256": "e7131d75fe98db07b69804b5ec81065a0f0d23a0fd91d64a9facd44fe8178c64"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/cosine.h",
+      "destination": "src/distance/neon/record_quantized_int4/cosine.h",
+      "sha256": "48c6e9f6ae11306687ab829884cb2d12547e7a93163fcc5e20b4b4a48799602c"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/inner_product.cc",
+      "destination": "src/distance/neon/record_quantized_int4/inner_product.cc",
+      "sha256": "ba313a534b6d43b9633b88b9610d315f090cc7f720e3d1fe2e61016babe5006b"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/inner_product.h",
+      "destination": "src/distance/neon/record_quantized_int4/inner_product.h",
+      "sha256": "bf8009d4133e96174621dc0cb0d8c01a7ce5ec4db1794cea717853d13a763c5a"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/squared_euclidean.cc",
+      "destination": "src/distance/neon/record_quantized_int4/squared_euclidean.cc",
+      "sha256": "20b87fceb7a85a43f6bfbd41a9b487f6c72d250cbd9a479670347569bf67770b"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int4/squared_euclidean.h",
+      "destination": "src/distance/neon/record_quantized_int4/squared_euclidean.h",
+      "sha256": "9278673c329afffa3e92dc7f73291666e1d30149b214c2cc2efa4697c05140a3"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/common.h",
+      "destination": "src/distance/neon/record_quantized_int8/common.h",
+      "sha256": "0e4d49029497f71a7fa9e708778a2af245b630439c1fad783ad80ab04fdcf0fc"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/cosine.cc",
+      "destination": "src/distance/neon/record_quantized_int8/cosine.cc",
+      "sha256": "6bb7b9f33810e8ae2c75be92c55a2d98e0f752870f28f937e0d8ff7341d8aaeb"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/cosine.h",
+      "destination": "src/distance/neon/record_quantized_int8/cosine.h",
+      "sha256": "2a41ff489c8bf3225453593eb3c05b6dddd5b3babc97982c14620cd385a95dcf"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/inner_product.cc",
+      "destination": "src/distance/neon/record_quantized_int8/inner_product.cc",
+      "sha256": "f8ddb3185e79dcb14f8845a1830818e4bdf3de48f38f2cbb79836f7cce02dfa4"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/inner_product.h",
+      "destination": "src/distance/neon/record_quantized_int8/inner_product.h",
+      "sha256": "eab2082ce89e05884393594dd0835e50f307d929e3269504d4bc1b83667af39e"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/squared_euclidean.cc",
+      "destination": "src/distance/neon/record_quantized_int8/squared_euclidean.cc",
+      "sha256": "cdc490b2a4e5e98c8e4bd8ca485f949a5e72ef138bd686e9ef9705a135b8969c"
+    },
+    {
+      "source": "src/turbo/distance/neon/record_quantized_int8/squared_euclidean.h",
+      "destination": "src/distance/neon/record_quantized_int8/squared_euclidean.h",
+      "sha256": "dbc08086c22bff67a9fcee239bb2b27cd8055ce20efed76aadd9f254f0bba157"
+    },
+    {
+      "source": "src/turbo/distance/neon/rotate/fht/fht.cc",
+      "destination": "src/distance/neon/rotate/fht/fht.cc",
+      "sha256": "911a8e7853a23cd37a6da8f6559cd5e55be7ff172411a33697a46be491c9abc4"
+    },
+    {
+      "source": "src/turbo/distance/neon/rotate/fht/fht.h",
+      "destination": "src/distance/neon/rotate/fht/fht.h",
+      "sha256": "58993ee7a30b750c32615e9e1d3d6a0680c2a16612100eec7590f6cd913d0906"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/cosine.cc",
+      "destination": "src/distance/neon_fp16/fp16/cosine.cc",
+      "sha256": "58a1eae509ad27d615f362bb1b630165508e488343f9dd863cab57484c4cda35"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/cosine.h",
+      "destination": "src/distance/neon_fp16/fp16/cosine.h",
+      "sha256": "c482f8eb184605914cffdc6a9746731ad5898bc376f1148ff804b6791b3b8167"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/fp32_batch.h",
+      "destination": "src/distance/neon_fp16/fp16/fp32_batch.h",
+      "sha256": "74a114dbf1fd59ccfbf414611a3be5117deb69fe988c9f5cb632d3e4dd212dd0"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/inner_product.cc",
+      "destination": "src/distance/neon_fp16/fp16/inner_product.cc",
+      "sha256": "7cffb06f16c1c380cf715d9e45fcd375c6b7fb10c5d1a8839048666bf78fb3b3"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/inner_product.h",
+      "destination": "src/distance/neon_fp16/fp16/inner_product.h",
+      "sha256": "994231f3b740351079720af7c9d96e31f60e1759193db91f96b5a157e08dfe96"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/squared_euclidean.cc",
+      "destination": "src/distance/neon_fp16/fp16/squared_euclidean.cc",
+      "sha256": "3f40df28ad66780130b96a812cc380e799373083eee740abdb934fa33c6e913c"
+    },
+    {
+      "source": "src/turbo/distance/neon_fp16/fp16/squared_euclidean.h",
+      "destination": "src/distance/neon_fp16/fp16/squared_euclidean.h",
+      "sha256": "4a3a4e9c5a1e3528005335eade1bc930c9b4c1d7c7463227db0285e97c9371be"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp16/cosine.cc",
+      "destination": "src/distance/scalar/fp16/cosine.cc",
+      "sha256": "12ac934c8f3850b7eaf017ec52159e8db37b266baed1364afc1a1e037d38d8a9"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp16/cosine.h",
+      "destination": "src/distance/scalar/fp16/cosine.h",
+      "sha256": "569e8c04fa7a33721f21236ce4b5024797f93dd8b4cab2ed0b9c7593ff3d88bb"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp16/inner_product.cc",
+      "destination": "src/distance/scalar/fp16/inner_product.cc",
+      "sha256": "11342f5baa1b75c2c40d0bdb671a3697afb88762916c49e0bcee78c34139863d"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp16/inner_product.h",
+      "destination": "src/distance/scalar/fp16/inner_product.h",
+      "sha256": "f8190623dbde359ff42d859469d2829cb2bf0fac0b972f99f5eed68a486faa1a"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp16/squared_euclidean.cc",
+      "destination": "src/distance/scalar/fp16/squared_euclidean.cc",
+      "sha256": "94db6411e4a8a485e0deb5438e31e5956608d7a7d3a44ef2e17168e9c2c76713"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp16/squared_euclidean.h",
+      "destination": "src/distance/scalar/fp16/squared_euclidean.h",
+      "sha256": "f6598c00d312927eca4b473e2560c35f97ddd56f795685422fab7abea491ccb5"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp32/cosine.cc",
+      "destination": "src/distance/scalar/fp32/cosine.cc",
+      "sha256": "42d1599a2b3a6f171c0159930a6f77e29e1351f2c57265cd92403b673883b169"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp32/cosine.h",
+      "destination": "src/distance/scalar/fp32/cosine.h",
+      "sha256": "66585dc15dc971ae831eb5a80ff49b2e808316963eb5dbb9fb52a1f3ad9f59ad"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp32/inner_product.cc",
+      "destination": "src/distance/scalar/fp32/inner_product.cc",
+      "sha256": "70ef18f71c70ef1d6e9de7a37f383ee2c4cd28ce1ce088f5378a38ba2d60f8c3"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp32/inner_product.h",
+      "destination": "src/distance/scalar/fp32/inner_product.h",
+      "sha256": "2752eee80feea63300815a1f5bb72e8957494a80958460fd8caab5de034988cf"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp32/squared_euclidean.cc",
+      "destination": "src/distance/scalar/fp32/squared_euclidean.cc",
+      "sha256": "594d7a710e63dd73fc2e2e4bcef70f291b874a348a2854076333813c0b2744f3"
+    },
+    {
+      "source": "src/turbo/distance/scalar/fp32/squared_euclidean.h",
+      "destination": "src/distance/scalar/fp32/squared_euclidean.h",
+      "sha256": "8fc7d29ab475293beb3e2a3107b2e96c802fc535a27908d6428112b1db4662be"
+    },
+    {
+      "source": "src/turbo/distance/scalar/pq_quantizer_fast/pq_distance.cc",
+      "destination": "src/distance/scalar/pq_quantizer_fast/pq_distance.cc",
+      "sha256": "c49b62cdeda7caaf85644a76e3baffc5b70a036d1e9f34fe5c4858dc009d2555"
+    },
+    {
+      "source": "src/turbo/distance/scalar/pq_quantizer_fast/pq_distance.h",
+      "destination": "src/distance/scalar/pq_quantizer_fast/pq_distance.h",
+      "sha256": "68c6b7940aeb5710ce98787d9eb8b292a245056a26b41c2228419c588b6543df"
+    },
+    {
+      "source": "src/turbo/distance/scalar/pq_quantizer_int4/pq_distance.cc",
+      "destination": "src/distance/scalar/pq_quantizer_int4/pq_distance.cc",
+      "sha256": "51aca2a0b719274de6a1a47042e9c5b0da3dd3968e775ec02936eb7e86b566e2"
+    },
+    {
+      "source": "src/turbo/distance/scalar/pq_quantizer_int4/pq_distance.h",
+      "destination": "src/distance/scalar/pq_quantizer_int4/pq_distance.h",
+      "sha256": "f842992b08c8a7e185368d281470340aa16b51eeb747350be39cb53a2fd6da3f"
+    },
+    {
+      "source": "src/turbo/distance/scalar/pq_quantizer_int8/pq_distance.cc",
+      "destination": "src/distance/scalar/pq_quantizer_int8/pq_distance.cc",
+      "sha256": "f1a6fdecf8e26b5bbda62f88cbf057a93f2342050922bffae8c10b0a1dbf2797"
+    },
+    {
+      "source": "src/turbo/distance/scalar/pq_quantizer_int8/pq_distance.h",
+      "destination": "src/distance/scalar/pq_quantizer_int8/pq_distance.h",
+      "sha256": "eb572ba5d8df846817a9944db0b063efe0944733704054a8f02ba109af17dc9d"
+    },
+    {
+      "source": "src/turbo/distance/scalar/raw_uint8/squared_euclidean.cc",
+      "destination": "src/distance/scalar/raw_uint8/squared_euclidean.cc",
+      "sha256": "5fdbdaa619f54aa0237690943aeab5fcf22ef28b08f7be053e0ab7eff3c4e34b"
+    },
+    {
+      "source": "src/turbo/distance/scalar/raw_uint8/squared_euclidean.h",
+      "destination": "src/distance/scalar/raw_uint8/squared_euclidean.h",
+      "sha256": "71c7d5076c059eb09c860ecf9d70f46c7296fdde047a6d86df87f19364adf1ab"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/common.h",
+      "destination": "src/distance/scalar/record_quantized_int4/common.h",
+      "sha256": "e11b4f31b2980050c21eae8830ce4de16df97f4ad00b75b17a7b8132141216d2"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/cosine.cc",
+      "destination": "src/distance/scalar/record_quantized_int4/cosine.cc",
+      "sha256": "a53d8c31129d1fa0a4f69f043ca17f9292a86e7c6e46bc8367dea250a614a6d7"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/cosine.h",
+      "destination": "src/distance/scalar/record_quantized_int4/cosine.h",
+      "sha256": "46aa631d130a0df01e7f3197a5465cab7bafe5627beaca3f0c5d79704d8578d4"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/inner_product.cc",
+      "destination": "src/distance/scalar/record_quantized_int4/inner_product.cc",
+      "sha256": "a6861141a77c4f4a556bdd8dbc29768311921c9a367a757df6feca0d76a9a48c"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/inner_product.h",
+      "destination": "src/distance/scalar/record_quantized_int4/inner_product.h",
+      "sha256": "1b13d8909543412bda84b2def5225b24fc71bf8bc8fb2e16b8014b56826c377d"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/squared_euclidean.cc",
+      "destination": "src/distance/scalar/record_quantized_int4/squared_euclidean.cc",
+      "sha256": "053b4243aefe46fc45ae39fca6ac5e1c4e0111a1253db5c64a0a119efc668268"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int4/squared_euclidean.h",
+      "destination": "src/distance/scalar/record_quantized_int4/squared_euclidean.h",
+      "sha256": "a740a9021601c88e4276c1e256f8ee57dab0e17c4a3da6e03b0abe832320acee"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/common.h",
+      "destination": "src/distance/scalar/record_quantized_int8/common.h",
+      "sha256": "137e2d7c715173187a29e2b9970b580a53aecf5100e77c7a3885b1808a15fad0"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/cosine.cc",
+      "destination": "src/distance/scalar/record_quantized_int8/cosine.cc",
+      "sha256": "0b055146b86799d4659beaf35a596892047d8959cca58b342c860863816b47e1"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/cosine.h",
+      "destination": "src/distance/scalar/record_quantized_int8/cosine.h",
+      "sha256": "c71a7c81a0e18a0079f4a9da12f1b0906f938c3fffa151226a06975ba737e27c"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/inner_product.cc",
+      "destination": "src/distance/scalar/record_quantized_int8/inner_product.cc",
+      "sha256": "f260fc50d3cce00b56b1069830d69fe39724a3b8cb5cb330c1d0b15aa0f36bdb"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/inner_product.h",
+      "destination": "src/distance/scalar/record_quantized_int8/inner_product.h",
+      "sha256": "e05a2aabec6a4d21357afea25d0dc86970f7780e4330e309b12ed2c530d5546a"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/squared_euclidean.cc",
+      "destination": "src/distance/scalar/record_quantized_int8/squared_euclidean.cc",
+      "sha256": "d4e6f8a5f3cdc0220fe2103209a34d99a0eb692e6d4fbea1dcf5da8044485051"
+    },
+    {
+      "source": "src/turbo/distance/scalar/record_quantized_int8/squared_euclidean.h",
+      "destination": "src/distance/scalar/record_quantized_int8/squared_euclidean.h",
+      "sha256": "45bc73d98d9c303164f819cf3185b7a32f244e233f0f7297d367b25d543ac4d7"
+    },
+    {
+      "source": "src/turbo/distance/scalar/rotate/fht/fht.cc",
+      "destination": "src/distance/scalar/rotate/fht/fht.cc",
+      "sha256": "e84feb26aff90bf80a93b5144cc6d4a40cc91c49135d139fdfb3cbb5b2bbb7ab"
+    },
+    {
+      "source": "src/turbo/distance/scalar/rotate/fht/fht.h",
+      "destination": "src/distance/scalar/rotate/fht/fht.h",
+      "sha256": "7af3f1d69b721449dd8da42753209c1766a01c54e0f83882031fa7f6140f2931"
+    },
+    {
+      "source": "src/turbo/distance/scalar/rotate/opq/opq.cc",
+      "destination": "src/distance/scalar/rotate/opq/opq.cc",
+      "sha256": "4526a1ca21152000593b759e33efa2d298307b0ea562d531cab947eb0608c43a"
+    },
+    {
+      "source": "src/turbo/distance/scalar/rotate/opq/opq.h",
+      "destination": "src/distance/scalar/rotate/opq/opq.h",
+      "sha256": "c4e574bd734655a3200296451c1641839fabf39121abdad96fcd64d66d66601c"
+    },
+    {
+      "source": "src/turbo/distance/sse2/fp16/distance.cc",
+      "destination": "src/distance/sse2/fp16/distance.cc",
+      "sha256": "91dbef4f21acd72432a5a56db6a55bcef47c986dd312cf425702921ab08c89de"
+    },
+    {
+      "source": "src/turbo/distance/sse2/fp16/distance.h",
+      "destination": "src/distance/sse2/fp16/distance.h",
+      "sha256": "73ed2402a45a5e12cedc4ba971d9b28040c5ea2b92eb5d344fd0e429c1700dfd"
+    },
+    {
+      "source": "src/turbo/distance/sse2/fp32/distance.cc",
+      "destination": "src/distance/sse2/fp32/distance.cc",
+      "sha256": "f32b13fb6a1fcea4ab75fa07c7d7e0862d0c55a306f055a6a15744bf9902fd0e"
+    },
+    {
+      "source": "src/turbo/distance/sse2/fp32/distance.h",
+      "destination": "src/distance/sse2/fp32/distance.h",
+      "sha256": "b6da6f7d2f83a9b7b2d04481c000501c2591c76ce31769ba66576f66bfff1705"
+    },
+    {
+      "source": "src/turbo/distance/sse2/record_quantized_int4/distance.cc",
+      "destination": "src/distance/sse2/record_quantized_int4/distance.cc",
+      "sha256": "b4c4698fea9a4c579d08ec1e3f84ad9dff5d08b6715e527f045d51f936b38be3"
+    },
+    {
+      "source": "src/turbo/distance/sse2/record_quantized_int4/distance.h",
+      "destination": "src/distance/sse2/record_quantized_int4/distance.h",
+      "sha256": "90a2920e75b926919379e5fc561d101be1b89ab87236a1cf4ee06bac28b5abd1"
+    },
+    {
+      "source": "src/turbo/distance/sse2/record_quantized_int8/distance.cc",
+      "destination": "src/distance/sse2/record_quantized_int8/distance.cc",
+      "sha256": "11250ed0149e9151423cd09c535378757e091b1f8c772ce860d7df94d2489e45"
+    },
+    {
+      "source": "src/turbo/distance/sse2/record_quantized_int8/distance.h",
+      "destination": "src/distance/sse2/record_quantized_int8/distance.h",
+      "sha256": "231608d5b860b6c031eae89c0d9d024118b7e6b4a95533861ac77444161d436a"
+    },
+    {
+      "source": "src/turbo/distance/sse2/rotate/fht/fht.cc",
+      "destination": "src/distance/sse2/rotate/fht/fht.cc",
+      "sha256": "61118a16ae1c04248d467e0cfda214ffd59abd63edd36f84006aea4e00b1a97c"
+    },
+    {
+      "source": "src/turbo/distance/sse2/rotate/fht/fht.h",
+      "destination": "src/distance/sse2/rotate/fht/fht.h",
+      "sha256": "d19420764c534b2b61992013997c813cb2172f46e43932920f8da81361f92218"
+    },
+    {
+      "source": "src/turbo/distance/sse2/simd.h",
+      "destination": "src/distance/sse2/simd.h",
+      "sha256": "4866ade0551c3ee9c2ee1b5a1910353de0acda1769e7650b01e26c8f2a0083b4"
+    },
+    {
+      "source": "src/turbo/conversion/avx512/convert.cc",
+      "destination": "src/conversion/avx512/convert.cc",
+      "sha256": "48f01d5a6f3d9a1b6ec6e1fc2b1dafff1411efc06322eb3f1ad55d0ae9d1bae7"
+    },
+    {
+      "source": "src/turbo/conversion/avx512/convert.h",
+      "destination": "src/conversion/avx512/convert.h",
+      "sha256": "6eae1bcdd6d3a03a310de0e43a2759719315133f55188786ecbcbe4e343817b3"
+    },
+    {
+      "source": "src/turbo/turbo.cc",
+      "destination": "src/turbo.cc",
+      "sha256": "90aed4bc663a9865a87b8ed8aac61c68e54f00088173d57a47a54bfc6ffa3303"
+    },
+    {
+      "source": "src/include/zvec/turbo/turbo.h",
+      "destination": "include/turbo/turbo.h",
+      "sha256": "46fc33b2f9728934e9019333455ffd4e52a4c91f21b5556ae799e78b87243931"
+    },
+    {
+      "source": "src/include/zvec/ailego/utility/float_helper.h",
+      "destination": "src/support/float_helper.h",
+      "sha256": "c56283f87f9671057104d6528a43a8aed183cab78d4c812c92aded187d42ba0f"
+    }
+  ]
+}

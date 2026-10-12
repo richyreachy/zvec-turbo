@@ -1,0 +1,9 @@
+prefix=${pcfiledir}/@TURBO_PC_PREFIX_REL@
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: Turbo
+Description: Runtime-dispatched vector search kernels
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -lturbo
+Cflags: -I${includedir} @TURBO_PC_DEFINES@

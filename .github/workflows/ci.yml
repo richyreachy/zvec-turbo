@@ -1,0 +1,29 @@
+name: Standalone release checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  native:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-14, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python scripts/verify_release.py --jobs 3
+      - run: python scripts/package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-${{ matrix.os }}
+          path: dist/*
+  sanitizers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DTURBO_ENABLE_SANITIZERS=ON
+      - run: cmake --build build --parallel 3
+      - run: ctest --test-dir build --output-on-failure

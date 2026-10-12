@@ -1,0 +1,16 @@
+Turbo standalone kernel preview
+Copyright 2025-present the zvec project
+
+This distribution contains vector kernels and a floating-point type header
+extracted and adapted from zvec under the Apache License, Version 2.0.
+Original copyright notices are retained. UPSTREAM.json records the exact
+source revision and SHA-256 hashes before adaptation.
+
+Standalone changes include namespace/include isolation, runtime availability
+checks, OS-aware CPU detection, portable binary16 conversion, packaging,
+tests, examples and documentation.
+
+Highway is an architectural reference for packaging and runtime dispatch.
+Highway source code is not included, and Highway is not a dependency.
+Eigen, RaBitQ, the zvec database/index framework, and their third-party
+dependencies are not included in this kernel-only distribution.
